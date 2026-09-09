@@ -1,4 +1,4 @@
-# bambu-3mf-converter
+# Bambu 3MF to GLB
 
 Convert a multi-color **Bambu Studio** `.3mf` project into a plain-colored **`.glb`**
 that any glTF-capable engine or viewer can open (Blender, Unity, Unreal, three.js,
@@ -29,10 +29,10 @@ Double-click **`Run GUI.bat`** (or run `python bambu3mf_gui.py`).
 ## Command line
 
 ```bash
-python bambu3mf_to_glb.py "buff baby world.3mf"
+python bambu3mf_to_glb.py "my model.3mf"
 ```
 
-This writes `buff baby world.glb` next to the input. Options:
+This writes `my model.glb` next to the input. Options:
 
 | Flag | Meaning |
 | --- | --- |
