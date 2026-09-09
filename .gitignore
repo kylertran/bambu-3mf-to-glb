@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.claude/
+
+# Model files: keep other people's designs out of the repo
+*.3mf
+*.glb
+*.gltf
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
