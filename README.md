@@ -20,6 +20,8 @@ model in Bambu Studio.
 
 Double-click **`Run GUI.bat`** (or run `python bambu3mf_gui.py`).
 
+![Bambu 3MF to GLB GUI: drop zone, input/output pickers, unit options and conversion log](docs/gui.png)
+
 * Drag a `.3mf` from File Explorer onto the window, or click **Browse...**.
 * Pick the destination with **Save as...** (defaults to a `.glb` next to the input).
 * Choose units / plate position, press **Convert**, then **Open output folder**.

@@ -201,6 +201,7 @@ class ConverterApp:
         self.busy = True
         self.convert_btn.configure(state="disabled")
         self.open_btn.configure(state="disabled")
+        self.progress.configure(mode="indeterminate")
         self.progress.start(12)
         # Read Tk variables here, on the GUI thread; the worker must never touch Tk objects.
         opts = {"units": self.units_var.get(), "keep_position": self.keep_pos_var.get()}
@@ -238,6 +239,7 @@ class ConverterApp:
     def _convert_done(self, outputs: list[str], error: str | None) -> None:
         self.busy = False
         self.progress.stop()
+        self.progress.configure(mode="determinate", value=0)  # fully clears the bar; stop() alone leaves the block
         self.convert_btn.configure(state="normal")
         self.last_outputs = outputs
         if outputs:
